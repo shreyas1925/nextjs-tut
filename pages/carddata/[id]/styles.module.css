@@ -1,0 +1,56 @@
+.parent {
+  width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-gap: 18px;
+}
+
+.child {
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 10px;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+}
+
+.child:hover {
+  border: 1px solid #0070f3;
+  color: #0070f3;
+}
+
+.button {
+  padding: 5px;
+  width: 15%;
+  font-weight: bolder;
+  color: #0070f3;
+  border: 1px solid #0070f3;
+}
+.button:hover {
+  background-color: #0070;
+}
+
+@media (max-width: 733px) {
+  .child {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 10px;
+    height: 440px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  }
+  .button {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1022px) {
+  .parent {
+    width: 60vw;
+  }
+}

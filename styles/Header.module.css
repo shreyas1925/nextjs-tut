@@ -35,3 +35,8 @@
 .nav li {
   padding: 20px;
 }
+
+.navholder {
+  text-transform: uppercase;
+  font-weight: 600;
+}

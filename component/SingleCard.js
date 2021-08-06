@@ -6,8 +6,8 @@ const SingleCard = ({ carddata }) => {
     <>
       <Link href="/carddata/[id]" as={`/carddata/${carddata.id}`}>
         <div className={styles.child}>
-          <h3>{carddata.title}</h3>
-          <p>{carddata.body}</p>
+          <h3 className={styles.heading}>{carddata.title}</h3>
+          <p className={styles.description}>{carddata.body}</p>
         </div>
       </Link>
     </>

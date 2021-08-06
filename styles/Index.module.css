@@ -21,3 +21,11 @@
   border: 1px solid #0070f3;
   color: #0070f3;
 }
+
+.heading {
+  text-transform: capitalize;
+}
+
+.description {
+  text-transform: capitalize;
+}
